@@ -35,24 +35,27 @@ class _HomeScreenState extends State<HomeScreen> {
      @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
       body: SafeArea(
-        child: GridView.builder(
-            shrinkWrap: true,
-            gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: 350,
-                childAspectRatio: 7 / 9,
-                crossAxisSpacing: 30,
-                mainAxisSpacing: 30),
-            itemCount: myProducts.length,
-            itemBuilder: (BuildContext ctx, index) {
-              return ProductCard(
-                title: 'shooos',
-                 price: '500',
-                imageUrl: imageUrl,
-              );
+        child: Container(
+          padding: EdgeInsets.only(top: 20),
+          color: const Color(0xffD9D9D9),
+          child: GridView.builder(
+              shrinkWrap: true,
+              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                  maxCrossAxisExtent: 350,
+                  childAspectRatio: 7 / 9,
+                  crossAxisSpacing: 30,
+                  mainAxisSpacing: 30),
+              itemCount: myProducts.length,
+              itemBuilder: (BuildContext ctx, index) {
+                return ProductCard(
+                  title: 'shooos',
+                   price: '500',
+                  imageUrl: imageUrl,
+                );
 
-            }),
+              }),
+        ),
       ),
       appBar:PreferredSize(
         preferredSize: const Size(double.infinity,200),

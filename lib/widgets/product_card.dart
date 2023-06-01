@@ -11,12 +11,12 @@ class ProductCard extends StatelessWidget {
     double fem = 1;
     double ffem = 1;
     return Container(
-      margin: EdgeInsets.only(left: 10,right: 10),
+      margin: const EdgeInsets.only(left: 10,right: 10),
       padding:  EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 25*fem),
       width:  170*fem,
       height:  double.infinity,
       decoration:  BoxDecoration (
-        color:  Color(0xffffffff),
+        color:  const Color(0xffffffff),
         borderRadius:  BorderRadius.circular(10*fem),
       ),
       child:

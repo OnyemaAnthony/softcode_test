@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "248847080700",
+    "project_id": "softcode-test",
+    "storage_bucket": "softcode-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248847080700:android:6e2b5f70f14f688109cb79",
+        "android_client_info": {
+          "package_name": "com.example.softcode_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWdflgMxEoveqy_ctpp88DsSVhCmoTTTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
