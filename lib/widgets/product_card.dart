@@ -44,7 +44,7 @@ class ProductCard extends StatelessWidget {
             margin:  EdgeInsets.fromLTRB(10.5*fem, 0*fem, 0*fem, 14.59*fem),
             child:
             Text(
-              'Adidas Converse',
+              title!,
               style:  GoogleFonts.inter (
                 fontSize:  13*ffem,
                 fontWeight:  FontWeight.w700,
@@ -58,7 +58,7 @@ class ProductCard extends StatelessWidget {
             margin:  EdgeInsets.fromLTRB(14*fem, 0*fem, 0*fem, 0*fem),
             child:
             Text(
-              '\$1200',
+              price!,
               style:  GoogleFonts.inter (
                 fontSize:  10*ffem,
                 fontWeight:  FontWeight.w700,

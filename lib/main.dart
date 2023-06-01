@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:softcode_test/di/injection.dart';
 import 'package:softcode_test/screens/home_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void main() async{
-  WidgetsFlutterBinding.ensureInitialized();
+   WidgetsFlutterBinding.ensureInitialized();
+   Di.initialize();
+  await Firebase.initializeApp();
+
   runApp( MyApp());
 
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(

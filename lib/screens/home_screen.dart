@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart'as gf;
+import 'package:softcode_test/blocs/product/product_bloc.dart';
+import 'package:softcode_test/models/product.dart';
+import 'package:softcode_test/screens/product_detail.dart';
+import 'package:softcode_test/utils/utilities.dart';
 import 'package:softcode_test/widgets/product_card.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -9,35 +14,24 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
-  String imageUrl ='https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60';
   double fem = 1;
   double ffem = 1;
-  final List<ProductCard> myProducts =[
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-    ProductCard(title: 'shoe',price: '300#',imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',),
-  ];
 
      @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
+    return BlocProvider(
+  create: (BuildContext context) => ProductBloc()..add(GetAllProductEvent()),
+  child: Scaffold(
+      body: BlocBuilder<ProductBloc, ProductState>(
+  builder: (context, state) {
+    if(state is ProductLoadingState){
+      return Utilities.showLoader();
+    }else if(state is ProductErrorState){
+      return  Center(child: Text(state.errorMessage),);
+    }else if (state is ProductLoadedState){
+      return SafeArea(
         child: Container(
-          padding: EdgeInsets.only(top: 20),
+          padding: const EdgeInsets.only(top: 20),
           color: const Color(0xffD9D9D9),
           child: GridView.builder(
               shrinkWrap: true,
@@ -46,17 +40,28 @@ class _HomeScreenState extends State<HomeScreen> {
                   childAspectRatio: 7 / 9,
                   crossAxisSpacing: 30,
                   mainAxisSpacing: 30),
-              itemCount: myProducts.length,
+              itemCount: state.products.length,
               itemBuilder: (BuildContext ctx, index) {
-                return ProductCard(
-                  title: 'shooos',
-                   price: '500',
-                  imageUrl: imageUrl,
+                Product product = state.products[index];
+                return GestureDetector(
+                  onTap: (){
+                    Utilities.push(context, ProductDetail(product: product));
+                  },
+                  child: ProductCard(
+                    title: product.productName,
+                    price: product.price,
+                    imageUrl: product.imageUrl,
+                  ),
                 );
 
               }),
         ),
-      ),
+      );
+    }
+    return Container();
+   
+  },
+),
       appBar:PreferredSize(
         preferredSize: const Size(double.infinity,200),
         child: Column(
@@ -189,6 +194,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ) ,
-    );
+    ),
+);
   }
 }
