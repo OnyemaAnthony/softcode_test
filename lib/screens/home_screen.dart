@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart'as gf;
+import 'package:google_fonts/google_fonts.dart';
 import 'package:softcode_test/blocs/product/product_bloc.dart';
 import 'package:softcode_test/models/product.dart';
 import 'package:softcode_test/screens/product_detail.dart';
@@ -139,7 +139,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             margin:  EdgeInsets.fromLTRB(0*fem, 2.92*fem, 61.51*fem, 0*fem),
                             child: Text(
                               'Search for a product',
-                              style:  gf.GoogleFonts.inter (
+                              style:  GoogleFonts.inter (
                                 fontSize:  15*ffem,
                                 fontWeight:  FontWeight.w400,
                                 height:  1.2125*ffem/fem,
