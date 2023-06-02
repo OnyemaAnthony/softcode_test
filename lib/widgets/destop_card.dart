@@ -12,7 +12,6 @@ class DesktopCard extends StatelessWidget {
     double fem = 1;
     double ffem = 1;
     return      Container(
-      // producttilewps (0:47)
       margin: EdgeInsets.fromLTRB(
           0 * fem, 0 * fem, 0 * fem, 51 * fem),
       padding: EdgeInsets.fromLTRB(
@@ -28,7 +27,6 @@ class DesktopCard extends StatelessWidget {
         CrossAxisAlignment.start,
         children: [
           Container(
-            // rectangle15F4s (0:51)
             margin: EdgeInsets.fromLTRB(0 * fem,
                 0 * fem, 0 * fem, 20 * fem),
             width: double.infinity,
@@ -46,11 +44,10 @@ class DesktopCard extends StatelessWidget {
             ),
           ),
           Container(
-            // adidasconverse9vw (0:49)
             margin: EdgeInsets.fromLTRB(16 * fem,
                 0 * fem, 0 * fem, 19 * fem),
             child: Text(
-              'Adidas Conv',
+              title!,
               style: GoogleFonts.inter(
                 fontSize: 20 * ffem,
                 fontWeight: FontWeight.w700,
@@ -64,7 +61,7 @@ class DesktopCard extends StatelessWidget {
             margin: EdgeInsets.fromLTRB(18 * fem,
                 0 * fem, 0 * fem, 0 * fem),
             child: Text(
-              '\$1200',
+              price!,
               style: GoogleFonts.inter(
                 fontSize: 15 * ffem,
                 fontWeight: FontWeight.w700,

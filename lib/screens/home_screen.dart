@@ -90,24 +90,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   ),
-                  // Positioned(
-                  //   left:  0,
-                  //   top:  71,
-                  //   child:
-                  //   Align(
-                  //     child:
-                  //     SizedBox(
-                  //       width:  430,
-                  //       height:  218,
-                  //       child:
-                  //       Container(
-                  //         decoration: const  BoxDecoration (
-                  //           color:  Color(0xffffffff),
-                  //         ),
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),
                   Positioned(
                     left:  20,
                     top:  48, child:
@@ -161,7 +143,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-
           ],
         ),
       ) ,
