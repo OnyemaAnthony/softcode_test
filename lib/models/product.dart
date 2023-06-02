@@ -17,8 +17,7 @@ class Product {
         productName = product.data()['productName'],
         price = product.data()['price'],
         imageUrl = product.data()['imageUrl'];
-        // createdAt = product.data()['createdAt'].toDate(),
-        // updatedAt = product.data()['updatedAt'].toDate();
+
 
 
   Map<String, dynamic> toMap() {

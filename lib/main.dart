@@ -8,7 +8,6 @@ void main() async{
    WidgetsFlutterBinding.ensureInitialized();
    Di.initialize();
   await Firebase.initializeApp();
-
   runApp( MyApp());
 
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
