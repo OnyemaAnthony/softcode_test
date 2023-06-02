@@ -30,7 +30,7 @@ class ProductCard extends StatelessWidget {
             height:  137.17*fem,
             decoration:  BoxDecoration (
               borderRadius:  BorderRadius.circular(10*fem),
-              color:  Color(0xffd9d9d9),
+              color:  const Color(0xffd9d9d9),
               image:  DecorationImage (
                 fit:  BoxFit.cover,
                 image:  NetworkImage (
@@ -49,7 +49,7 @@ class ProductCard extends StatelessWidget {
                 fontSize:  13*ffem,
                 fontWeight:  FontWeight.w700,
                 height:  1.2125*ffem/fem,
-                color:  Color(0xff000000),
+                color:  const Color(0xff000000),
               ),
             ),
           ),
@@ -63,7 +63,7 @@ class ProductCard extends StatelessWidget {
                 fontSize:  10*ffem,
                 fontWeight:  FontWeight.w700,
                 height:  1.2125*ffem/fem,
-                color:  Color(0xff000000),
+                color:  const Color(0xff000000),
               ),
             ),
           ),

@@ -126,67 +126,38 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ],
                       ),
-                      child: Row(
-                        crossAxisAlignment:  CrossAxisAlignment.center,
-                        children:  [
-                          Container(
-                            margin:  EdgeInsets.fromLTRB(0*fem, 1.84*fem, 18.22*fem, 0*fem),
-                            width:  16.42*fem,
-                            height:  22.03*fem,
-                            child:const Icon(Icons.search)
+                      child: TextFormField(
+
+                    decoration: const InputDecoration(
+                    border: InputBorder.none,
+                        suffixIcon: Icon(Icons.keyboard_arrow_down),
+                        prefixIcon: Icon(Icons.search),
+                        hintText: 'Search for a product'
+                    ),),
+                    ),
+                  ),
+                  Positioned(
+                    left:  100,
+                    top:  159*fem,
+                    child:
+                    Align(
+                      child:
+                      SizedBox(
+                        width:  216*fem,
+                        height:  43*fem,
+                        child:
+                        Text(
+                          'My Products',
+                          style: GoogleFonts.inter (
+                            fontSize:  35*ffem,
+                            fontWeight:  FontWeight.w700,
+                            height:  1.2125*ffem/fem,
+                            color:  const Color(0xff000000),
                           ),
-                          Container(
-                            margin:  EdgeInsets.fromLTRB(0*fem, 2.92*fem, 61.51*fem, 0*fem),
-                            child: Text(
-                              'Search for a product',
-                              style:  GoogleFonts.inter (
-                                fontSize:  15*ffem,
-                                fontWeight:  FontWeight.w400,
-                                height:  1.2125*ffem/fem,
-                                color:  const Color(0xff000000),
-                              ),
-                            ),
-                          ),
-                          Container(
-                            padding:  EdgeInsets.fromLTRB(82.77*fem, 1.84*fem, 0*fem, 0*fem),
-                            height:  double.infinity,
-                            child:
-                            Align(
-                              alignment:  Alignment.bottomRight,
-                              child:
-                              SizedBox(
-                                width:  16.42*fem,
-                                height:  22.03*fem,
-                                child:const Icon(Icons.keyboard_arrow_down)
-                              ),
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
                     ),
                   ),
-                  // Positioned(
-                  //   left:  100,
-                  //   top:  159*fem,
-                  //   child:
-                  //   Align(
-                  //     child:
-                  //     SizedBox(
-                  //       width:  216*fem,
-                  //       height:  43*fem,
-                  //       child:
-                  //       Text(
-                  //         'My Products',
-                  //         style: gf. GoogleFonts.inter (
-                  //           fontSize:  35*ffem,
-                  //           fontWeight:  FontWeight.w700,
-                  //           height:  1.2125*ffem/fem,
-                  //           color:  const Color(0xff000000),
-                  //         ),
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),
                 ],
               ),
             ),

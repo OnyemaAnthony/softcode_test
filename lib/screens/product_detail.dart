@@ -14,14 +14,14 @@ class ProductDetail extends StatelessWidget {
         child: Container(
           // iphone14promax2xqV (1:2)
           width:  double.infinity,
-          decoration:  BoxDecoration (
+          decoration:  const BoxDecoration (
             color:  Color(0xffffffff),
           ),
           child:
           Column(
             crossAxisAlignment:  CrossAxisAlignment.center,
             children:  [
-              Container(
+              SizedBox(
                 // autogroup7mhh36F (RFVVQRcFRjq8TrCDSk7mhh)
                 width:  double.infinity,
                 height:  289*fem,
@@ -40,7 +40,7 @@ class ProductDetail extends StatelessWidget {
                           height:  71*fem,
                           child:
                           Container(
-                            decoration:  BoxDecoration (
+                            decoration:  const BoxDecoration (
                               color:  Color(0xffd68484),
                             ),
                           ),
@@ -59,7 +59,7 @@ class ProductDetail extends StatelessWidget {
                           height:  218*fem,
                           child:
                           Container(
-                            decoration:  BoxDecoration (
+                            decoration:  const BoxDecoration (
                               color:  Color(0xffffffff),
                             ),
                           ),
@@ -76,11 +76,11 @@ class ProductDetail extends StatelessWidget {
                         width:  368*fem,
                         height:  67*fem,
                         decoration:  BoxDecoration (
-                          color:  Color(0xffffffff),
+                          color:  const Color(0xffffffff),
                           borderRadius:  BorderRadius.circular(10*fem),
                           boxShadow:  [
                             BoxShadow(
-                              color:  Color(0x3f000000),
+                              color:  const Color(0x3f000000),
                               offset:  Offset(0*fem, 4*fem),
                               blurRadius:  2*fem,
                             ),
@@ -95,7 +95,7 @@ class ProductDetail extends StatelessWidget {
                               margin:  EdgeInsets.fromLTRB(0*fem, 1.84*fem, 18.22*fem, 0*fem),
                               width:  16.42*fem,
                               height:  22.03*fem,
-                              child:Icon(Icons.search)
+                              child:const Icon(Icons.search)
                             ),
                             Container(
                               // searchforaproductYUF (1:9)
@@ -107,7 +107,7 @@ class ProductDetail extends StatelessWidget {
                                   fontSize:  15*ffem,
                                   fontWeight:  FontWeight.w400,
                                   height:  1.2125*ffem/fem,
-                                  color:  Color(0xff000000),
+                                  color:  const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -122,7 +122,7 @@ class ProductDetail extends StatelessWidget {
                                 SizedBox(
                                   width:  5.42*fem,
                                   height:  22.03*fem,
-                                  child:Icon(Icons.search)
+                                  child:const Icon(Icons.search)
                                 ),
                               ),
                             ),
@@ -147,7 +147,7 @@ class ProductDetail extends StatelessWidget {
                               fontSize:  35*ffem,
                               fontWeight:  FontWeight.w700,
                               height:  1.2125*ffem/fem,
-                              color:  Color(0xff000000),
+                              color:  const Color(0xff000000),
                             ),
                           ),
                         ),
@@ -161,7 +161,7 @@ class ProductDetail extends StatelessWidget {
                 padding:  EdgeInsets.fromLTRB(43*fem, 44*fem, 19*fem, 44*fem),
                 width:  double.infinity,
                 height:  643*fem,
-                decoration:  BoxDecoration (
+                decoration:  const BoxDecoration (
                   color:  Color(0xfffdfdfd),
                 ),
                 child:
@@ -182,11 +182,11 @@ class ProductDetail extends StatelessWidget {
                         padding:  EdgeInsets.fromLTRB(49*fem, 25*fem, 49*fem, 23*fem),
                         width:  double.infinity,
                         decoration:  BoxDecoration (
-                          color:  Color(0xffffffff),
+                          color:  const Color(0xffffffff),
                           borderRadius:  BorderRadius.circular(10*fem),
                           boxShadow:  [
                             BoxShadow(
-                              color:  Color(0x3f000000),
+                              color:  const Color(0x3f000000),
                               offset:  Offset(0*fem, 4*fem),
                               blurRadius:  2*fem,
                             ),
@@ -199,7 +199,7 @@ class ProductDetail extends StatelessWidget {
                             fontSize:  15*ffem,
                             fontWeight:  FontWeight.w400,
                             height:  1.2125*ffem/fem,
-                            color:  Color(0xff000000),
+                            color:  const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -208,11 +208,11 @@ class ProductDetail extends StatelessWidget {
                         padding:  EdgeInsets.fromLTRB(49*fem, 24*fem, 49*fem, 24*fem),
                         width:  double.infinity,
                         decoration:  BoxDecoration (
-                          color:  Color(0xffffffff),
+                          color:  const Color(0xffffffff),
                           borderRadius:  BorderRadius.circular(10*fem),
                           boxShadow:  [
                             BoxShadow(
-                              color:  Color(0x3f000000),
+                              color:  const Color(0x3f000000),
                               offset:  Offset(0*fem, 4*fem),
                               blurRadius:  2*fem,
                             ),
@@ -225,7 +225,7 @@ class ProductDetail extends StatelessWidget {
                             fontSize:  15*ffem,
                             fontWeight:  FontWeight.w400,
                             height:  1.2125*ffem/fem,
-                            color:  Color(0xff000000),
+                            color:  const Color(0xff000000),
                           ),
                         ),
                       ),
