@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:softcode_test/blocs/product/product_bloc.dart';
-import 'package:softcode_test/widgets/destop_card.dart';
+import 'package:softcode_test/widgets/desktop_card.dart';
 import 'package:softcode_test/widgets/product_button.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

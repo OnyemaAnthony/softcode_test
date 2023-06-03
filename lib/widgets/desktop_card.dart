@@ -57,7 +57,6 @@ class DesktopCard extends StatelessWidget {
             ),
           ),
           Container(
-            // H1Z (0:50)
             margin: EdgeInsets.fromLTRB(18 * fem,
                 0 * fem, 0 * fem, 0 * fem),
             child: Text(
